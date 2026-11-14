@@ -1,0 +1,46 @@
+name: Submit a claim to audit
+description: Someone made a public, checkable claim — a company, a fund, a public figure, an individual. Send it to the desk verbatim.
+title: "[Claim] "
+labels: ["claim-intake"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sending a claim. Two rules make audits possible: quote the claim **verbatim** (paraphrase is where claims go to become unfalsifiable), and tell us exactly where it appeared.
+  - type: input
+    id: claimant
+    attributes:
+      label: Who made the claim
+      description: The company, organisation, fund, public figure, or individual who said it — and where they said it as.
+      placeholder: e.g. Acme Corp (acme.example) — or a named individual posting publicly
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim, verbatim
+      description: Copy the exact words. Include numbers exactly as published.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where it appeared
+      description: URL, publication, or post link. A screenshot is fine too — say where it came from.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date you saw it
+      placeholder: e.g. 2026-10-20
+  - type: textarea
+    id: interest
+    attributes:
+      label: Your interest, if any
+      description: Optional but valued — any relationship you have with the claim-maker (customer, employee, investor, competitor, or a dispute with them). Declared interests are recorded in the audit, not held against you.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else the desk should know
+      description: Context, related claims, or why this one matters. Label what you witnessed vs. what you inferred.

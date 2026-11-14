@@ -1,0 +1,32 @@
+name: Challenge an audit
+description: Dispute a published Claim Checker finding. Challenges are appended as dated errata — audits are never silently edited.
+title: "[Challenge] "
+labels: ["challenge"]
+body:
+  - type: input
+    id: audit
+    attributes:
+      label: Audit ID or title
+      description: Every published audit carries an ID and a link to this form, pre-filled.
+    validations:
+      required: true
+  - type: textarea
+    id: dispute
+    attributes:
+      label: What do you dispute
+      description: The specific claim, verdict, or inference — and what the record should say instead.
+    validations:
+      required: true
+  - type: textarea
+    id: basis
+    attributes:
+      label: Your basis
+      description: Evidence, links, or first-hand knowledge. We respond with reasoning either way — the audit stands, is amended, or is withdrawn, in public.
+    validations:
+      required: true
+  - type: checkboxes
+    id: credit
+    attributes:
+      label: Credit
+      options:
+        - label: Credit me by name if my challenge changes the audit

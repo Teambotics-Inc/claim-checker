@@ -1,0 +1,34 @@
+name: Send evidence or a correction
+description: Documents, links, or first-party records — including evidence against our own findings.
+title: "[Evidence] "
+labels: ["evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Evidence against a published Claim Checker finding is especially welcome. That is the mechanism working, not failing.
+  - type: textarea
+    id: what
+    attributes:
+      label: What the evidence shows
+      description: Say which claim or published audit it bears on, and what it establishes.
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: The evidence
+      description: Links, document references, or descriptions of records you hold. Do not upload private data about individuals.
+    validations:
+      required: true
+  - type: dropdown
+    id: basis
+    attributes:
+      label: How you know this
+      options:
+        - I witnessed it directly
+        - I read it in a primary source
+        - I hold a record of it
+        - I inferred it (say so — inferences are welcome, labelled)
+    validations:
+      required: true

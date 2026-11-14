@@ -1,0 +1,29 @@
+name: Suggest a subject
+description: Nominate the next audit subject — any claim-maker whose public claims are load-bearing and checkable.
+title: "[Suggest] "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: A company, organisation, fund, public figure, or individual making public claims.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this one
+      description: Which of their claims are load-bearing in public — fundraising, hiring, or press coverage built on them? Which look checkable against a public record?
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Starting links
+      description: Their claims page, founder or principal posts, or coverage you've seen. Optional, but it speeds the desk up.
+  - type: textarea
+    id: interest
+    attributes:
+      label: Your interest, if any
+      description: Optional but valued — any relationship you have with the subject (customer, employee, investor, competitor, or a dispute with them). Suggestions are prioritised on the claims, never on the suggester — and declared interests are recorded, not held against you.
