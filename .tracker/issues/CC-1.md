@@ -1,0 +1,36 @@
+---
+id: CC-1
+title: Add a dedicated OSINT study / OSINT section to Claim Checker
+status: Todo
+statusType: unstarted
+priority: null
+assignee: null
+createdBy: null
+project: Claim Checker
+milestone: null
+initiative: null
+cycle: null
+parent: null
+createdAt: "2026-11-25T15:05:44.844Z"
+updatedAt: "2026-11-25T15:05:50.139Z"
+startedAt: null
+completedAt: null
+canceledAt: null
+linearUrl: null
+gitBranchName: null
+---
+
+## Description
+
+
+
+## Comments
+
+### CLI — 2026-11-25T15:05:50.138Z
+Raised by Nik (2026-11-25, voice call). Goal: add a dedicated OSINT (open-source intelligence) study, and from it an OSINT section in Claim Checker, so investigations can use OSINT methods as a distinct named layer of an audit — not ad-hoc web research. Nik's background is in OSINT, which is part of why these products exist.
+
+To work out in the study (details deliberately not assumed here): (1) what the OSINT section contains — sources, techniques, collection discipline for a claim audit (public records, registries, archives, corporate filings, web/social traces); (2) where OSINT sits in the STANDARD / test battery, with its own provenance and citation rules; (3) how OSINT findings feed verdicts without overstating them; (4) privacy and scope boundaries, consistent with the existing publication gates and the public-claims-only rule.
+
+Cost note (Nik): adding OSINT burns materially more tokens / research effort, and the right depth depends on the investigation — so the design needs an explicit per-investigation cost/depth decision, recorded in the audit, not an always-on default. Expected benefit: a stronger evidence base — in some investigations, a lot stronger.
+
+Acceptance: a written OSINT study in the repo defining the section, its sources and limits, its integration with the STANDARD and output contract, and how the per-investigation cost/depth call is made and recorded. Status: planned, not implemented.
